@@ -1,0 +1,151 @@
+body {
+	background: linear-gradient(#208383, #990000);
+	display: flex;
+	flex: 1 1 100vh;
+	align-content: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 5px 5px 0 0;
+}
+h1 {
+	border: 10px solid black;
+	border-radius: 0 0 60px 60px;
+	align-self: center;
+	flex: 1 1 150px;
+	max-width: 1620px;
+	font-size:  100px;
+	font-family: helvetica;
+	color:  #00D2D2;
+	margin: 10px;
+	background: linear-gradient(#750000, #002C2C);
+	padding: 40px;
+	text-align: center;
+	text-shadow: -1px -1px 0px #022649,
+			-2px -2px 0px #022649,
+			-3px -3px 0px #022649,
+			-4px -4px 0px #022649,
+			-5px -5px 0px #022649,
+			-3px 3px 20px black;
+}
+.bar{
+	display: flex;
+	flex:  1 1 100px;
+	border:  5px solid black;
+	border-radius: 60px 60px 0 0;
+	background: linear-gradient(#002C2C, #750000);
+	align-self: space-around;
+	justify-content: space-between;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+
+.nav {
+	flex:  1 1 200px;
+}
+
+ul {
+	display: flex;
+	flex: 1 1 100px;
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+a {
+	text-decoration: none;
+	color: #00D2D2;
+	text-shadow: 1px 1px 1px black,
+		-1px -1px 1px black,
+		-1px 1px 1px black,
+		1px -1px 1px black,
+		0px 0px 8px black;
+	transition: all .1s;
+}
+li {
+	font-family: helvetica;
+	font-size: 17px;
+	font-weight: bold;
+	border: 3px solid white;
+	list-style-type: none;
+	margin:  10px;	
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 15% 0 25% 0;
+	background: #476060;
+	transition: all .1s;
+}
+a:hover, li:hover {
+	transform: scale(1.1);
+	text-shadow: 0 0 5px black;
+	color: #0C6F6F;
+}
+h3 {
+	align-self: center;
+	background: #2BAE2B;
+	border: 5px solid black;
+	padding: 10px;
+	border-radius: 0 0 15px 15px;
+}
+.color {
+	align-self:  center;
+	margin-left: 30px;
+}
+
+.paragraph {
+	display: flex;
+	flex-direction: ;
+	height: 80vh;
+	justify-content: center;
+}
+
+p {
+	font-family: helvetica;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.25);
+	max-width: 1200px;
+	border:  5px solid black;
+	border-radius: 30px;
+}
+
+
+
+.colorselect{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1086px) {
+	h1 {
+		font-size: 60px;
+		flex-basis: 90px;
+	}
+
+	li {font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+	.bar {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	h1{
+		font-size: 50px;
+		flex-basis:  70px;
+	}
+	ul {
+		flex-direction: column;
+		text-align: center;
+	}
+	li {
+		font-size: 12px;
+		padding: 6px;
+	}
+	.color {
+		margin-top: 25px;
+	}
+}
